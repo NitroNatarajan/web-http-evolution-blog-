@@ -7,17 +7,17 @@ Understanding HTTP is essential for anyone diving into web development or simply
 ## Table of Contents
   1. What is HTTP?
   2. The Journey Through HTTP Versions
-    - HTTP/0.9 - The Simple Beginning (1991)
-    - HTTP/1.0 - Adding More to the Conversation (1996)
-    - HTTP/1.1 - Enhancing Efficiency and Functionality (1997)
-    - SPDY - Paving the Way for Modern Web Protocols (2009)
-    - HTTP/2 - The Modern Web’s Backbone (2015)
-    - HTTP/3 - The Future of Web Communication (2020s)
+    + HTTP/0.9 - The Simple Beginning (1991)
+    + HTTP/1.0 - Adding More to the Conversation (1996)
+    + HTTP/1.1 - Enhancing Efficiency and Functionality (1997)
+    + SPDY - Paving the Way for Modern Web Protocols (2009)
+    + HTTP/2 - The Modern Web’s Backbone (2015)
+    + HTTP/3 - The Future of Web Communication (2020s)
   3. Key Features and Comparisons
-    - Multiplexing: HTTP/1.1 vs. SPDY vs. HTTP/2 vs. HTTP/3
-    - Header Compression
-    - Server Push
-    - Persistent Connections
+    + Multiplexing: HTTP/1.1 vs. SPDY vs. HTTP/2 vs. HTTP/3
+    + Header Compression
+    + Server Push
+    + Persistent Connections
   4. Visualizing the Evolution
   5. Conclusion
   6. Additional Resources
