@@ -60,3 +60,52 @@ Client Request:
 + Disadvantages:
     + Limited Functionality: Could only retrieve HTML content.
     + No Metadata: No way to specify content types, lengths, or additional information
+    + Inefficient Connections: Required a new TCP connection for each request, leading to increased latency.
+
+Analogy: 
+  > Imagine sending a postcard where you can only write a simple message without any additional details or formatting options.
+
+---
+
+### HTTP/1.0 - Adding More to the Conversation (1996)
+#### Introduction:
+  + Released in 1996, HTTP/1.0 built upon its predecessor by introducing more features to facilitate richer web interactions.
+  + Features:
+      * Multiple Methods: Added POST and HEAD methods, enabling clients to send data to servers and retrieve headers without the body.
+      * Headers Introduced: Allowed inclusion of metadata in both requests and responses (e.g., Host, User-Agent, Content-Type).
+      * Status Codes: Introduced response status codes (e.g., 200 OK, 404 Not Found) to indicate the outcome of requests.
+      * Content Types: Supported various content types beyond HTML, such as images, videos, and plain text.
+      * Optional Persistent Connections: Introduced the Connection: keep-alive header to reuse TCP connections for multiple requests.
+
+Example:
+Client Request:
+```
+      GET /index.html HTTP/1.0
+      Host: example.com
+      User-Agent: Mozilla/5.0
+      Accept: */*
+
+```
+  Server Response:
+```
+    HTTP/1.0 200 OK
+    Content-Type: text/html
+    Content-Length: 137
+    Connection: close
+
+    <html>Welcome to HTTP/1.0!</html>
+```
++ Advantages:
+    + Enhanced Functionality: Supported multiple methods and content types, making web interactions more versatile.
+    + Metadata Exchange: Headers provided a way to send additional information, improving communication between client and server.
+    + Improved Efficiency: Optional persistent connections could reduce the number of TCP handshakes required.
++ Disadvantages:
+    + Limited Persistent Connections: Connection: keep-alive was not widely adopted initially, meaning many connections were still closed after each request.
+    + Statelessness: Remained a stateless protocol, requiring each request to contain all necessary information.
+    + Inefficiency in Loading Complex Pages: Loading multiple resources (like images and scripts) required multiple connections, leading to performance issues.
+
+Analogy: 
+  > Upgrading from sending simple postcards to sending letters with envelopes that can carry additional information and even reuse the same envelope for multiple messages.
+
+
+  
